@@ -3,266 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enrico Lima Freitas | Portfólio</title>
-  <meta name="description" content="Portfólio de Enrico Lima Freitas — Desenvolvimento de Sistemas, Suporte & Infraestrutura e Cybersecurity.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#111612">
+  <meta property="og:title" content="Enrico Lima Freitas | Portfólio">
+  <meta property="og:description" content="Enrico Lima Freitas — desenvolvedor de sistemas, profissional de suporte e infraestrutura e estudante de cybersecurity.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://enrico099.github.io/">
+  <title>Enrico Lima Freitas | Portfólio</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style-immersive.css">
+  <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js"}}</script>
 </head>
 <body>
 
-  <header class="nav">
-    <div class="container nav-inner">
-      <a href="#inicio" class="brand" aria-label="Voltar ao início">
-        <span class="monogram">EF</span>
-        <span class="brand-text">
-          <strong>Enrico Freitas</strong>
-          <small><i class="pulse"></i>Disponível para oportunidades</small>
-        </span>
-      </a>
-      <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="nav-links">
-        <a href="#sobre">Sobre</a>
-        <a href="#skills">Skills</a>
-        <a href="#experiencia">Experiência</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#formacao">Formação</a>
-        <a href="#contato">Contato</a>
-      </nav>
-    </div>
+  <a class="skip-link" href="#chapterContent">Pular para o conteúdo</a>
+  <canvas id="cityScene" aria-label="Cena 3D de uma cidade tecnológica" role="img"></canvas>
+  <div class="scene-wash" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="identity" href="#inicio" aria-label="Enrico Lima Freitas, início"><span class="identity-mark">EF<span>.</span></span><span class="identity-copy"><strong>Enrico Lima Freitas</strong><small>DESENVOLVEDOR DE SISTEMAS · INFRA · CYBERSECURITY</small></span></a>
+    <div class="top-links"><span class="location"><i></i> SÃO PAULO, BR</span><a href="https://github.com/Enrico099" target="_blank" rel="noopener">GITHUB <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/enrico-lima-a67021219" target="_blank" rel="noopener">LINKEDIN <span aria-hidden="true">↗</span></a></div>
   </header>
-
-  <main>
-    <!-- HERO -->
-    <section id="inicio" class="hero">
-      <div class="container">
-        <h1>Enrico Lima Freitas</h1>
-        <h2 class="typing"><span id="typed"></span><span class="cursor">|</span></h2>
-        <p class="hero-text">
-          Desenvolvedor em formação e profissional de Suporte &amp; Infraestrutura,
-          estudando Cybersecurity. Gosto de resolver problemas, entender como os
-          sistemas funcionam por dentro e construir soluções que ajudam pessoas.
-        </p>
-        <div class="hero-actions">
-          <a href="#projetos" class="btn btn-primary">Ver projetos</a>
-          <a href="#contato" class="btn btn-outline">Fale comigo</a>
-        </div>
-        <div class="socials">
-          <a href="https://github.com/Enrico099" target="_blank" rel="noopener" aria-label="GitHub">
-            <svg viewBox="0 0 24 24"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12C23.5 5.7 18.3.5 12 .5z"/></svg>
-          </a>
-          <a href="https://www.linkedin.com/in/enrico-lima-a67021219" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg>
-          </a>
-          <a href="mailto:enricolimafreitas@gmail.com" aria-label="E-mail">
-            <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V6l8 5 8-5v2.2z"/></svg>
-          </a>
-        </div>
-      </div>
+  <main class="portfolio-stage" id="inicio">
+    <div class="scene-caption" aria-hidden="true"><span>UM PORTFÓLIO EM MOVIMENTO</span><span>23°33' S&nbsp; 46°38' W</span></div>
+    <section class="chapter-window" aria-label="Apresentação do portfólio">
+      <div class="window-chrome"><div class="window-lights" aria-hidden="true"><i></i><i></i><i></i></div><span class="window-path"><b>enrico</b> / <span id="chapterPath">perfil.json</span></span><span class="window-state"><i></i> PORTFÓLIO</span><button class="expand-button" id="expandPanel" type="button" aria-label="Expandir painel" aria-expanded="false"><span>expandir</span><b aria-hidden="true">⤢</b></button></div>
+      <div class="chapter-heading"><div><p class="chapter-index" id="chapterIndex">01 / PERFIL</p><h1 id="chapterTitle">Quem sou</h1></div><span class="chapter-count" id="chapterCount">01 <i>/</i> 07</span></div>
+      <div class="chapter-content" id="chapterContent" tabindex="0" aria-live="polite" aria-atomic="true"></div>
     </section>
-
-    <!-- SOBRE -->
-    <section id="sobre" class="section">
-      <div class="container">
-        <h2 class="section-title"><span class="mono accent">01.</span> Sobre mim</h2>
-        <div class="about reveal">
-          <div class="about-text">
-            <p>
-              Sou formado como <strong>Técnico em Desenvolvimento de Sistemas</strong> pela ETEC,
-              graduando em <strong>Desenvolvimento de Sistemas</strong> pela Fatec e em
-              <strong>Cybersecurity</strong> pela Universidade de São Caetano do Sul (USCS).
-            </p>
-            <p>
-              Hoje atuo com <strong>suporte e infraestrutura na BGF Consultoria</strong>, cuidando de
-              atualizações de aplicações e manipulação de dados. Já passei por service desk,
-              suporte ao cliente e moderação de conteúdo, o que me deu uma visão prática de
-              como a tecnologia impacta o dia a dia das pessoas e das empresas.
-            </p>
-            <p>
-              Fora do trabalho, sou <strong>líder de equipe voluntário na ONG Amigos do Bem</strong> desde 2018,
-              organizando voluntários para arrecadação de alimentos no combate à fome no sertão nordestino.
-            </p>
-            <p>
-              Meu objetivo é seguir crescendo, aplicar o que aprendo e contribuir de forma significativa
-              para os times e empresas em que estou.
-            </p>
-          </div>
-          <div class="about-card">
-            <div class="terminal">
-              <div class="terminal-bar"><i></i><i></i><i></i><span>enrico@portfolio:~</span></div>
-              <pre class="mono"><span class="accent">$</span> whoami
-enrico lima freitas
-<span class="accent">$</span> cat foco.txt
-dev · infra · cybersecurity
-<span class="accent">$</span> cat certificados.txt
-AWS Certified</pre>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="section">
-      <div class="container">
-        <h2 class="section-title"><span class="mono accent">02.</span> Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-group reveal">
-            <h3>Linguagens</h3>
-            <ul class="tags">
-              <li>Java</li><li>Python</li><li>C</li><li>JavaScript</li><li>TypeScript</li><li>HTML &amp; CSS</li>
-            </ul>
-          </div>
-          <div class="skill-group reveal">
-            <h3>Banco de Dados</h3>
-            <ul class="tags">
-              <li>SQL</li><li>MySQL</li><li>Prisma ORM</li><li>Supabase</li><li>Modelagem de dados</li>
-            </ul>
-          </div>
-          <div class="skill-group reveal">
-            <h3>Infra &amp; Cloud</h3>
-            <ul class="tags">
-              <li>AWS</li><li>Docker</li><li>Node.js</li><li>Git &amp; GitHub</li><li>Linux</li>
-            </ul>
-          </div>
-          <div class="skill-group reveal">
-            <h3>Suporte &amp; Segurança</h3>
-            <ul class="tags">
-              <li>Service Desk</li><li>Troubleshooting</li><li>Atendimento técnico</li><li>Cybersecurity</li><li>Liderança de equipe</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- EXPERIÊNCIA -->
-    <section id="experiencia" class="section">
-      <div class="container">
-        <h2 class="section-title"><span class="mono accent">03.</span> Experiência</h2>
-        <ol class="timeline">
-          <li class="reveal">
-            <span class="date mono">dez/2025 — atual</span>
-            <h3>Suporte e Infraestrutura <span class="at">@ BGF Consultoria</span></h3>
-            <p>Suporte e infraestrutura, atualizações de aplicações e manipulação de dados.</p>
-          </li>
-          <li class="reveal">
-            <span class="date mono">ago/2024 — fev/2025</span>
-            <h3>T.I. — Service Desk <span class="at">@ HS Prevent</span></h3>
-            <p>Resolução de problemas relacionados aos sistemas internos utilizados pela empresa.</p>
-          </li>
-          <li class="reveal">
-            <span class="date mono">mar/2024 — mar/2025</span>
-            <h3>Moderador de Conteúdo <span class="at">@ East River</span></h3>
-            <p>Análise das propagandas que seriam exibidas nas plataformas digitais.</p>
-          </li>
-          <li class="reveal">
-            <span class="date mono">abr/2024 — jul/2024</span>
-            <h3>Suporte ao Cliente — Cartão Ticket <span class="at">@ Contax</span></h3>
-            <p>Suporte técnico e atendimento a usuários do cartão Ticket: transações, bloqueios, emissões,
-              saldo e recargas, com registro e acompanhamento de solicitações e feedbacks.</p>
-          </li>
-          <li class="reveal">
-            <span class="date mono">mai/2018 — atual</span>
-            <h3>Líder de Equipe (voluntário) <span class="at">@ Amigos do Bem</span></h3>
-            <p>Organização e seleção de voluntários para arrecadação de alimentos em supermercados,
-              no combate à fome e à miséria no sertão nordestino.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- PROJETOS -->
-    <section id="projetos" class="section">
-      <div class="container">
-        <h2 class="section-title"><span class="mono accent">04.</span> Projetos</h2>
-        <div class="projects">
-          <article class="project reveal">
-            <div class="project-top">
-              <svg class="folder" viewBox="0 0 24 24"><path d="M10 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-8l-2-2z"/></svg>
-              <a href="https://github.com/Enrico099/lojamotos" target="_blank" rel="noopener" aria-label="Repositório">↗</a>
-            </div>
-            <h3>MotoHub — Loja de Motos</h3>
-            <p>Plataforma SaaS de catálogo para concessionárias de motos, com arquitetura multi-loja,
-              autenticação JWT, upload de fotos via URLs pré-assinadas e otimização automática de imagens em WebP.</p>
-            <ul class="tags small"><li>Node.js</li><li>JavaScript</li><li>MySQL</li><li>Prisma</li><li>Docker</li><li>JWT</li></ul>
-          </article>
-
-          <article class="project reveal">
-            <div class="project-top">
-              <svg class="folder" viewBox="0 0 24 24"><path d="M10 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-8l-2-2z"/></svg>
-              <a href="https://github.com/Enrico099/ubs-repo" target="_blank" rel="noopener" aria-label="Repositório">↗</a>
-            </div>
-            <h3>Cadastro de Pacientes — UPA</h3>
-            <p>Sistema web para cadastro e gerenciamento de pacientes em uma Unidade de Pronto Atendimento,
-              com frontend e backend separados, facilitando o registro e a consulta de atendimentos.</p>
-            <ul class="tags small"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Backend</li><li>Banco de Dados</li></ul>
-          </article>
-
-          <article class="project reveal">
-            <div class="project-top">
-              <svg class="folder" viewBox="0 0 24 24"><path d="M10 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-8l-2-2z"/></svg>
-              <a href="https://github.com/Enrico099/Padaria" target="_blank" rel="noopener" aria-label="Repositório">↗</a>
-            </div>
-            <h3>Padaria</h3>
-            <p>Aplicação web para uma padaria, construída com stack moderna de frontend e banco de dados
-              gerenciado na nuvem.</p>
-            <ul class="tags small"><li>TypeScript</li><li>Vite</li><li>Tailwind CSS</li><li>Supabase</li></ul>
-          </article>
-        </div>
-        <p class="more"><a href="https://github.com/Enrico099?tab=repositories" target="_blank" rel="noopener" class="btn btn-outline">Ver todos no GitHub</a></p>
-      </div>
-    </section>
-
-    <!-- FORMAÇÃO -->
-    <section id="formacao" class="section">
-      <div class="container">
-        <h2 class="section-title"><span class="mono accent">05.</span> Formação</h2>
-        <div class="edu-grid">
-          <div class="edu reveal">
-            <span class="date mono">2025 — 2029</span>
-            <h3>Cybersecurity</h3>
-            <p>Universidade de São Caetano do Sul (USCS)</p>
-          </div>
-          <div class="edu reveal">
-            <span class="date mono">2024 — 2025</span>
-            <h3>Desenvolvimento de Sistemas</h3>
-            <p>Fatec</p>
-          </div>
-          <div class="edu reveal">
-            <span class="date mono">2021 — 2023</span>
-            <h3>Técnico em Desenvolvimento de Sistemas</h3>
-            <p>ETEC</p>
-          </div>
-          <div class="edu reveal">
-            <span class="date mono">certificação</span>
-            <h3>AWS Certified</h3>
-            <p>Amazon Web Services</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTATO -->
-    <section id="contato" class="section contact">
-      <div class="container">
-        <h2 class="contact-title">Entre em contato</h2>
-        <p class="contact-text">
-          Estou disponível para novas oportunidades nas áreas de desenvolvimento, infraestrutura
-          e segurança da informação. Caso tenha interesse em meu perfil, será um prazer conversar.
-        </p>
-        <a href="mailto:enricolimafreitas@gmail.com" class="btn btn-primary">Enviar e-mail</a>
-        <p class="mono email">enricolimafreitas@gmail.com</p>
-      </div>
-    </section>
+    <nav class="chapter-dock" aria-label="Navegação por capítulos"><button class="dock-arrow" id="previousChapter" type="button" aria-label="Capítulo anterior">‹</button><div class="dock-center"><button class="chapter-picker" id="chapterPicker" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="chapterMenu"><span class="picker-number" id="pickerNumber">01</span><span class="picker-title" id="pickerTitle">PERFIL</span><span class="picker-total" id="pickerTotal">1 / 7</span><span class="picker-chevron" aria-hidden="true">⌃</span></button><div class="chapter-menu" id="chapterMenu" role="listbox" aria-label="Escolha um capítulo" hidden></div></div><button class="dock-arrow" id="nextChapter" type="button" aria-label="Próximo capítulo">›</button></nav>
+    <p class="keyboard-hint"><kbd>←</kbd><kbd>→</kbd> NAVEGAR <span>·</span> <kbd>ESC</kbd> FECHAR</p>
   </main>
+  <noscript><p class="noscript">Este portfólio interativo precisa de JavaScript para navegar pelos capítulos.</p></noscript>
+  <script type="module" src="portfolio.js"></script>
 
-  <footer class="footer">
-    <p class="mono">Feito por Enrico Lima Freitas · <span id="year"></span></p>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
